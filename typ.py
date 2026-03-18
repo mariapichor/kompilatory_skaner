@@ -9,3 +9,5 @@ class Typ(Enum):
     DZIELENIE = "DZIELENIE"
     LNAWIAS = "LNAWIAS"
     PNAWIAS = "PNAWIAS"
+    EOF = "EOF"
+    ERR = "ERR"

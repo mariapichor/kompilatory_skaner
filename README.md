@@ -9,3 +9,5 @@
 | DZIELENIE |     operator dzielenia "/" |
 | LNAWIAS | lewy nawias "("|
 |PNAWIAS| prawy nawias ")"|
+|EOF | koniec wejścia |
+|ERR| nieprawidłowy znak, np. "#" |
