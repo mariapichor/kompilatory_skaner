@@ -1,7 +1,11 @@
 from enum import Enum
 
 class Typ(Enum):
-    NUMBER = "NUMBER"
-    OPERATOR = "OPERATOR"
+    LICZBA = "LICZBA"
+    ID = "ID"
+    PLUS = "PLUS"
+    MINUS = "MINUS"
+    MNOZENIE = "MNOZENIE"
+    DZIELENIE = "DZIELENIE"
     LNAWIAS = "LNAWIAS"
     PNAWIAS = "PNAWIAS"
