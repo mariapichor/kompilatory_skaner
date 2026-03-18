@@ -1,39 +1,42 @@
 from token import Token
-def skaner(wyr):
-    tokens = []
-    n = len(wyr)
-    i=0
-    while i<n:
-        napis = ""
-        while(wyr[i].isdigit()):
-            napis+=wyr[i]
+from typ import Typ
+
+class Skaner:
+    def skaner(tekst, i) -> Token:
+        n = len(tekst)
+        if i < n:
+            x = tekst[i]
+
+
+            if x.isdigit():
+                napis = x
+                i += 1
+                while i < n and tekst[i].isdigit():
+                    napis += tekst[i]
+                    i += 1
+                return Token(Typ.LICZBA, int(napis), i)
+
+            if x.isalpha():
+                napis = x
+                i += 1
+                while (i < n and tekst[i].isalpha()):
+                    napis += tekst[i]
+                    i += 1
+                return Token(Typ.ID, napis, i)
             i+=1
-        if napis!="":
-            tokens.append(Token('LICZBA',int(napis)))
-        
-        if (wyr[i].isalpha()):
-            napis = ""
-            while(wyr[i].isalpha()):
-                napis+=wyr[i]
-                i+=1
-            tokens.append(Token('ID',napis))
-        if(wyr[i]=='+'):
-            tokens.append(Token('PLUS','+'))
-        elif(wyr[i]=='-'):
-            tokens.append(Token('MINUS','-'))
-        elif(wyr[i]=='*'):
-            tokens.append(Token('MNOZENIE','*'))
-        elif(wyr[i]=='/'):
-            tokens.append(Token('DZIELENIE','/'))
-        elif(wyr[i]=='('):
-            tokens.append(Token('LNAWIAS','('))
-        elif(wyr[i]==')'):
-            tokens.append(Token('PNAWIAS',')'))
-        elif(wyr[i]==" "):
-            pass
-        else:
-            tokens.append(Token('ERR',wyr[i]))
-        i+=1
-    tokens.append(Token('EOF',''))
-    for token in tokens:
-        print(token.typ, token.wartosc)
+            if x == '+':
+                return Token(Typ.PLUS, x, i)
+            elif x == '-':
+                return Token(Typ.MINUS, x,i)
+            elif x == '*':
+                return Token(Typ.MNOZENIE, x, i)
+            elif x == '/':
+                return Token(Typ.DZIELENIE, x, i)
+            elif x == '(':
+                return Token(Typ.LNAWIAS, x, i)
+            elif x == ')':
+                return Token(Typ.PNAWIAS, x, i)
+            else:
+                return Token(Typ.ERR, x, i)
+
+        return Token(Typ.EOF, None, i)
