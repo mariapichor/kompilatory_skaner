@@ -1,0 +1,3 @@
+int x = 5
+if napis == "ala":
+    x = x + 2
