@@ -5,7 +5,7 @@ from typ import Typ
 KOLORY_TOKENOW = {
     Typ.KEYWORD: "color: #ff79c6; font-weight: bold;",
     Typ.OPERATOR: "color: #50fa7b;",
-    Typ.COMMENTS: "color: #6272a4; font-style: italic;",
+    Typ.COMMENT: "color: #6272a4; font-style: italic;",
     Typ.STRING: "color: #f1fa8c;",
     Typ.NUMBER: "color: #bd93f9;",
     Typ.IDENTIFIER: "color: #f8f8f2;",

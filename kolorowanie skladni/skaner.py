@@ -2,6 +2,7 @@ from token import Token
 from typ import Typ
 
 class Skaner:
+    @staticmethod
     def skaner(tekst, i) -> Token:
         operators = {'+', '-', '/', '*', '>', '<'}
         keywords = {'if', 'else', 'while', 'for', 'return', 'print'}
