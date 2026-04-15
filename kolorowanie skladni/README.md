@@ -9,6 +9,6 @@
 | STRING |    tekst, rozpoczynające się od "|
 | NUMBER | liczba |
 |WHITESPACE| znak biały: spacja, tabulator|
-|NEWLINE| przejscie do nowej linijki, '/n'|
+|NEWLINE| przejscie do nowej linijki, '\n'|
 |EOF | koniec wejścia |
 |ERR| nieprawidłowy znak |
