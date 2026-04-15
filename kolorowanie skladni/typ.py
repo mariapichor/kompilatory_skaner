@@ -1,0 +1,14 @@
+from enum import Enum
+
+class Typ(Enum):
+    KEYWORD = "KEYWORD"
+    OPERATOR = "OPERATOR"
+    COMMENTS = "COMMENTS"
+    IDENTIFIER = "IDENTIFIER"
+    SEPARATOR = "SEPARATOR"
+    STRING = "STRING"
+    NUMBER = "NUMBER"
+    WHITESPACE = "WHITESPACE"
+    NEWLINE = "NEWLINE"
+    EOF = "EOF"
+    ERR = "ERR"
