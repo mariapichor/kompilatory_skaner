@@ -10,5 +10,6 @@
 | NUMBER | liczba |
 |WHITESPACE| znak biały: spacja, tabulator|
 |NEWLINE| przejscie do nowej linijki, '\n'|
+|TYPE| typ zmiennej, np. string, int|
 |EOF | koniec wejścia |
 |ERR| nieprawidłowy znak |

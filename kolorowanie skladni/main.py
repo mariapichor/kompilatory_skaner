@@ -9,7 +9,8 @@ KOLORY_TOKENOW = {
     Typ.STRING: "color: #f1fa8c;",
     Typ.NUMBER: "color: #bd93f9;",
     Typ.IDENTIFIER: "color: #f8f8f2;",
-    Typ.ERR: "color: #ff5555; text-decoration: underline;"
+    Typ.ERR: "color: #ff5555; text-decoration: underline;",
+    Typ.TYPE: "color: #9243E0;"
 }
 def generate_html(lista_tokenow,nazwa_p):
     with open(nazwa_p,'w',encoding='utf-8') as f:

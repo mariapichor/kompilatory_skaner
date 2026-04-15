@@ -10,5 +10,6 @@ class Typ(Enum):
     NUMBER = "NUMBER"
     WHITESPACE = "WHITESPACE"
     NEWLINE = "NEWLINE"
+    TYPE = "TYPE"
     EOF = "EOF"
     ERR = "ERR"

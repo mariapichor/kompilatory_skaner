@@ -7,6 +7,7 @@ class Skaner:
         operators = {'+', '-', '/', '*', '>', '<'}
         keywords = {'if', 'else', 'while', 'for', 'return', 'print'}
         separators = {',', ';', ':', '(', ')', '{', '}'}
+        types = {'int', 'string', 'bool', 'float', 'void'}
         n = len(tekst)
         if i < n:
             x = tekst[i]
@@ -26,6 +27,8 @@ class Skaner:
                     i += 1
                 if napis in keywords:
                     return Token(Typ.KEYWORD, napis, i)
+                if napis in types:
+                    return Token(Typ.TYPE, napis, i)
                 return Token(Typ.IDENTIFIER, napis, i)
             
             if x == '"':
