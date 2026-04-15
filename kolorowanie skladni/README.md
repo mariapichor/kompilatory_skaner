@@ -1,13 +1,14 @@
 # Zbiór tokenów
 | Nazwa | Opis |
 |-------|------|
-|  LICZBA  |  liczba całkowita, np. 2, 76    |
-|  ID   |   identyfikator, nazwa zmiennej (zaczyna się od małej litery) |
-|  PLUS |   operator dodawania "+"   |
-| MINUS |    operator odejmowania "-"  |
-|  MNOZENIE |    operator mnozenia "*"  |
-| DZIELENIE |     operator dzielenia "/" |
-| LNAWIAS | lewy nawias "("|
-|PNAWIAS| prawy nawias ")"|
+|  KEYWORD  |  słowo kluczowe, np. while, if |
+| OPERATOR |    operator, np. '+', '-', '=', '==', '/' |
+|  COMMENT   |   komentarz, czyli linijka rozpoczynający się od '#' |
+|  IDENTIFIER |   identyfikator, nazwa zmiennej (zaczyna się od małej litery)  |
+|  SEPARATOR |    separator, np. ',', ';', ':', '(', ')' |
+| STRING |    tekst, rozpoczynające się od "|
+| NUMBER | liczba |
+|WHITESPACE| znak biały: spacja, tabulator|
+|NEWLINE| przejscie do nowej linijki, '/n'|
 |EOF | koniec wejścia |
-|ERR| nieprawidłowy znak, np. "#" |
+|ERR| nieprawidłowy znak |

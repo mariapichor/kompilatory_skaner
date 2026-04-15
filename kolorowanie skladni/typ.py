@@ -3,7 +3,7 @@ from enum import Enum
 class Typ(Enum):
     KEYWORD = "KEYWORD"
     OPERATOR = "OPERATOR"
-    COMMENTS = "COMMENTS"
+    COMMENT = "COMMENT"
     IDENTIFIER = "IDENTIFIER"
     SEPARATOR = "SEPARATOR"
     STRING = "STRING"
